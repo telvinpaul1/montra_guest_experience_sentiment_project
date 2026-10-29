@@ -1,0 +1,5 @@
+table,primary_key,missing_key_count,duplicate_key_count,key_column_exists
+hotels,hotel_id,0,0,True
+guests,guest_id,0,0,True
+reviews,review_id,0,0,True
+bookings,booking_id,0,0,True

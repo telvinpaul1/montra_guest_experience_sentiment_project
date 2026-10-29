@@ -1,0 +1,6 @@
+child_table,child_column,parent_table,parent_column,orphan_count,status
+reviews,hotel_id,hotels,hotel_id,0,PASS
+reviews,guest_id,guests,guest_id,0,PASS
+reviews,booking_id,bookings,booking_id,0,PASS
+bookings,hotel_id,hotels,hotel_id,0,PASS
+bookings,guest_id,guests,guest_id,0,PASS

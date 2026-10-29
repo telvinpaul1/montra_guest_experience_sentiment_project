@@ -1,0 +1,335 @@
+table,check,success,result
+hotels,table_has_rows,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_table_row_count_to_be_between"",
+    ""kwargs"": {
+      ""batch_id"": ""hotels_pandas_source-hotels_asset"",
+      ""min_value"": 1
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""observed_value"": 25
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+hotels,hotel_id_not_null,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_not_be_null"",
+    ""kwargs"": {
+      ""batch_id"": ""hotels_pandas_source-hotels_asset"",
+      ""column"": ""hotel_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 25,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+hotels,hotel_id_unique,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_be_unique"",
+    ""kwargs"": {
+      ""batch_id"": ""hotels_pandas_source-hotels_asset"",
+      ""column"": ""hotel_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 25,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""missing_count"": 0,
+    ""missing_percent"": 0.0,
+    ""unexpected_percent_total"": 0.0,
+    ""unexpected_percent_nonmissing"": 0.0,
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+guests,table_has_rows,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_table_row_count_to_be_between"",
+    ""kwargs"": {
+      ""batch_id"": ""guests_pandas_source-guests_asset"",
+      ""min_value"": 1
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""observed_value"": 12000
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+guests,guest_id_not_null,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_not_be_null"",
+    ""kwargs"": {
+      ""batch_id"": ""guests_pandas_source-guests_asset"",
+      ""column"": ""guest_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 12000,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+guests,guest_id_unique,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_be_unique"",
+    ""kwargs"": {
+      ""batch_id"": ""guests_pandas_source-guests_asset"",
+      ""column"": ""guest_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 12000,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""missing_count"": 0,
+    ""missing_percent"": 0.0,
+    ""unexpected_percent_total"": 0.0,
+    ""unexpected_percent_nonmissing"": 0.0,
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+reviews,table_has_rows,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_table_row_count_to_be_between"",
+    ""kwargs"": {
+      ""batch_id"": ""reviews_pandas_source-reviews_asset"",
+      ""min_value"": 1
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""observed_value"": 35000
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+reviews,review_id_not_null,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_not_be_null"",
+    ""kwargs"": {
+      ""batch_id"": ""reviews_pandas_source-reviews_asset"",
+      ""column"": ""review_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 35000,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+reviews,review_id_unique,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_be_unique"",
+    ""kwargs"": {
+      ""batch_id"": ""reviews_pandas_source-reviews_asset"",
+      ""column"": ""review_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 35000,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""missing_count"": 0,
+    ""missing_percent"": 0.0,
+    ""unexpected_percent_total"": 0.0,
+    ""unexpected_percent_nonmissing"": 0.0,
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+reviews,review_text_not_null,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_not_be_null"",
+    ""kwargs"": {
+      ""batch_id"": ""reviews_pandas_source-reviews_asset"",
+      ""column"": ""review_text""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 35000,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+bookings,table_has_rows,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_table_row_count_to_be_between"",
+    ""kwargs"": {
+      ""batch_id"": ""bookings_pandas_source-bookings_asset"",
+      ""min_value"": 1
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""observed_value"": 35000
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+bookings,booking_id_not_null,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_not_be_null"",
+    ""kwargs"": {
+      ""batch_id"": ""bookings_pandas_source-bookings_asset"",
+      ""column"": ""booking_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 35000,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"
+bookings,booking_id_unique,True,"{
+  ""success"": true,
+  ""expectation_config"": {
+    ""type"": ""expect_column_values_to_be_unique"",
+    ""kwargs"": {
+      ""batch_id"": ""bookings_pandas_source-bookings_asset"",
+      ""column"": ""booking_id""
+    },
+    ""meta"": {},
+    ""severity"": ""critical""
+  },
+  ""result"": {
+    ""element_count"": 35000,
+    ""unexpected_count"": 0,
+    ""unexpected_percent"": 0.0,
+    ""partial_unexpected_list"": [],
+    ""missing_count"": 0,
+    ""missing_percent"": 0.0,
+    ""unexpected_percent_total"": 0.0,
+    ""unexpected_percent_nonmissing"": 0.0,
+    ""partial_unexpected_counts"": [],
+    ""partial_unexpected_index_list"": []
+  },
+  ""meta"": {},
+  ""exception_info"": {
+    ""raised_exception"": false,
+    ""exception_traceback"": null,
+    ""exception_message"": null
+  }
+}"

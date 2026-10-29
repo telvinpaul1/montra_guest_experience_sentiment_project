@@ -1,0 +1,8 @@
+table,column,invalid_count,rule,status
+hotels,star_rating,0,1 <= value <= 5,PASS
+reviews,rating_score,0,1 <= value <= 5,PASS
+guests,previous_stays,0,0 <= value <= inf,PASS
+hotels,total_rooms,0,0 <= value <= inf,PASS
+bookings,total_amount,0,0 <= value <= inf,PASS
+bookings,check_in_date/check_out_date,0,both dates parse successfully,PASS
+bookings,check_out_date,0,check-out is on or after check-in,PASS

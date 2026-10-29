@@ -1,0 +1,5 @@
+table,issue,evidence,action_taken,status
+guests,Missing loyalty_status values,6036 missing values in the extracted guest table,Created guest_clean as a copy and filled missing loyalty_status with 'Unknown'; raw guest table retained,Handled in cleaned copy; validate with business owner
+reviews,Missing or blank review_text,0 null review_text values,Reported for review; do not silently delete records,Review missing_values_report.csv and decide treatment
+all tables,Primary-key integrity,See primary_key_report.csv and great_expectations_report.csv,Automated null and uniqueness checks added,Review any failed checks before downstream modelling
+reviews/bookings/hotels/guests,Foreign-key integrity,See foreign_key_report.csv,Checked child IDs against parent tables,"Review orphan IDs, if any, against source system"
